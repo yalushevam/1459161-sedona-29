@@ -1,0 +1,220 @@
+/* Variables */
+:root {
+    --shadow-grey: #888888;
+    /* тень по бокам   */
+    --basic-white: #FFFFFF;
+    /* шапка+content-title, белый текст*/
+    --basic-black: #000000;
+    /* жирный текст   */
+    --dark-black: #231F20;
+    /*copyright покой   */
+    --extra-black: #231F20;
+    /*copyright нажатие   */
+    --basic-blue: #81B3D2;
+    --dark-blue: #669EC0;
+    /* наведение */
+    --extra-dark-blue: #5496BD;
+    /* нажатие */
+    --dirty-grey: #333333;
+    /* стандартный текст  */
+    --basic-grey: #EEEEEE;
+    /* content */
+    --basic-brown: #766357;
+    /* поиск коричневый +кнопки +на странице */
+    --dark-brown: #604E43;
+    /* наведение */
+    --extra-dark-brown: #503E33;
+    /* нажатие */
+    --calm-grey: #CACACA;
+    /* стрелочки */
+    --dark-grey: #F2F2F2;
+    /* форма внутри, кнопки рейтинг  */
+    --darkest-grey: #A9A9A9;
+    /*календарь в форме */
+    --features-grey: rgba(0, 1, 1, 0.2);
+    /* жилье+заинтересовались  */
+    --dirty-white: rgba(255, 255, 255, 0.9);
+    /* футер  */
+    --light-white: rgba(0, 0, 0, 0.3);
+    /* по клику  */
+}
+
+/* Global */
+body {
+    min-width: 1200px;
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--basic-black);
+    text-transform: uppercase;
+    background-color: var(--basic-white);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Main header */
+.main-header {
+    background-color: var(--basic-white);
+}
+
+.site-navigation {
+    list-style: none;
+    background-color: var(--basic-white);
+}
+
+.main-navigation a {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    color: var(--basic-black);
+}
+
+.main-navigation a:hover {
+    color: var(--basic-blue);
+}
+
+.main-navigation a:active {
+    color: var(--light-white);
+}
+
+/* Center */
+
+.center {
+    background-color: var(--basic-white);
+}
+
+.title {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.subtitle {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.content-big {
+    color: var(--basic-white);
+    background-color: var(--basic-blue);
+}
+
+.content-name {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+}
+
+/* Features */
+
+.features-list {
+    list-style: none;
+    background-color: var(--features-grey);
+}
+
+.feature-name {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.feature-item p {
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--dirty-grey);
+}
+
+/* Offer */
+
+.offer {
+    background: var(--basic-white);
+}
+
+.offer-title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 24px;
+}
+
+/* Button search */
+
+.button-search {
+    color: var(--basic-white);
+    background-color: var(--basic-brown);
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.button-search:hover {
+    background-color: var(--dark-brown);
+}
+
+.hotel-search-button:active {
+    color: var(--special-white);
+    background-color: var(--extra-dark-brown);
+}
+
+/* Footer */
+
+.page-footer {
+    background-color: var(--dirty-white);
+}
+
+.contacts {
+    color: var(--basic-black);
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.contacts a {
+    color: var(--basic-black);
+}
+
+.socials-list {
+    list-style: none;
+}
+
+.social-button {
+    background-color: var(--basic-blue);
+    color: var(--basic-white);
+}
+
+.social-button:hover {
+    background-color: var(--dark-blue);
+}
+
+.social-button:active {
+    background-color: var(--extra-dark-blue);
+    color: var(--light-white);
+}
+
+.copyright {
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.copyright-link {
+    color: var(--dark-black);
+}
+
+.copyright-link:hover {
+    color: var(--basic-blue);
+}
+
+.copyright-link:active {
+    color: var(--darkest-grey);
+}
