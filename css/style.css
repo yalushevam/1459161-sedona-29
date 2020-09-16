@@ -2,41 +2,44 @@
 :root {
     --shadow-grey: #888888;
     /* тень по бокам   */
+
     --basic-white: #FFFFFF;
-    /* шапка+content-title, белый текст*/
-    --basic-black: #000000;
-    /* жирный текст   */
-    --dark-black: #231F20;
-    /*copyright покой   */
-    --extra-black: #231F20;
-    /*copyright нажатие   */
-    --basic-blue: #81B3D2;
-    --dark-blue: #669EC0;
-    /* наведение */
-    --extra-dark-blue: #5496BD;
-    /* нажатие */
-    --dirty-grey: #333333;
-    /* стандартный текст  */
-    --basic-grey: #EEEEEE;
-    /* content */
-    --basic-brown: #766357;
-    /* поиск коричневый +кнопки +на странице */
-    --dark-brown: #604E43;
-    /* наведение */
-    --extra-dark-brown: #503E33;
-    /* нажатие */
-    --calm-grey: #CACACA;
-    /* стрелочки */
-    --dark-grey: #F2F2F2;
-    /* форма внутри, кнопки рейтинг  */
-    --darkest-grey: #A9A9A9;
-    /*календарь в форме */
-    --features-grey: rgba(0, 1, 1, 0.2);
-    /* жилье+заинтересовались  */
+    /* header, content-title, white font, */
     --dirty-white: rgba(255, 255, 255, 0.9);
     /* футер  */
     --light-white: rgba(0, 0, 0, 0.3);
-    /* по клику  */
+    /* button on click  */
+
+    --basic-black: #000000;
+    /* black font */
+    --dark-black: #231F20;
+    /*copyright */
+
+    --basic-blue: #81B3D2;
+    --dark-blue: #669EC0;
+    /* hover button*/
+    --extra-dark-blue: #5496BD;
+    /* active button */
+
+    --dirty-grey: #333333;
+    /* content font p */
+    --basic-grey: #EEEEEE;
+    /* content-name brd */
+    --calm-grey: #CACACA;
+    /* up,down slaider */
+    --dark-grey: #F2F2F2;
+    /* input form  */
+    --darkest-grey: #A9A9A9;
+    /*details form */
+    --features-grey: rgba(0, 1, 1, 0.2);
+    /* offer,features */
+
+    --basic-brown: #766357;
+    /* search-button */
+    --dark-brown: #604E43;
+    /* hover-search-button */
+    --extra-dark-brown: #503E33;
+    /* active-search-button */
 }
 
 /* Global */
