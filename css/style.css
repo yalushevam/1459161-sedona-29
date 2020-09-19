@@ -7,7 +7,7 @@
     /* header, content-title, white font, */
     --dirty-white: rgba(255, 255, 255, 0.9);
     /* футер  */
-    --special-white:rgba(255,255,255,0.3);
+    --special-white: rgba(255, 255, 255, 0.3);
     /* search-button on click  */
     --light-white: rgba(0, 0, 0, 0.3);
     /* button on click  */
@@ -35,6 +35,7 @@
     /*details form */
     --features-grey: rgba(0, 1, 1, 0.2);
     /* offer,features */
+    --rate-grey: #666666;
 
     --basic-brown: #766357;
     /* search-button */
@@ -84,6 +85,12 @@ img {
 
 .main-navigation a:active {
     color: var(--light-white);
+}
+
+.main-navigation-selected a,
+.main-navigation-selected a:hover,
+.main-navigation-selected a:active {
+    color: var(--basic-brown);
 }
 
 /* Center */
@@ -153,7 +160,7 @@ img {
 /* Offer */
 
 .offer {
-    background: var(--brand-color);
+    background: var(--features-grey);
 }
 
 .offer-title {
@@ -191,6 +198,132 @@ img {
 .button-search:active {
     color: var(--special-white);
     background-color: var(--extra-dark-brown);
+}
+
+/* Filter */
+
+.filter {
+    background-color: var(--brand-color);
+}
+
+.filter-text {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.filter-button-selected {
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--light-white);
+    background-color: var(--brand-color);
+    border: none;
+}
+
+.filter-button {
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--light-white);
+    background-color: var(--brand-color);
+    border: none;
+    border-bottom: 1px dashed var(--basic-blue);
+}
+
+.filter-button:hover {
+    color: var(--basic-blue);
+}
+
+.filter-button:active {
+    color: var(--brand-font-color);
+    border: none;
+}
+
+.filter-up,
+.filter-up:hover,
+.filter-up:active {
+    color: var(--calm-grey);
+}
+
+.filter-down {
+    color: var(--basic-blue);
+}
+
+.filter-down:hover {
+    color: var(--brand-font-color);
+}
+
+.filter-down:active {
+    color: var(--basic-blue);
+}
+
+/* Hotels */
+
+.hotel {
+    background-color: var(--brand-color);
+}
+
+.hotel-list {
+    list-style: none;
+}
+
+.hotel-name {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.hotel-type,
+.hotel-price,
+.hotel-button-more,
+.hotel-button-booking,
+.hotel-rate {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+
+.hotel-button-more {
+    background-color: var(--basic-blue);
+    color: var(--brand-color);
+}
+
+.hotel-button-more:hover {
+    background-color: var(--dark-blue);
+}
+
+.hotel-button-more:active {
+    color: var(--special-white);
+    background-color: var(--extra-dark-blue);
+}
+
+.hotel-button-booking {
+    background-color: var(--basic-brown);
+    color: var(--brand-color);
+}
+
+.hotel-button-booking:hover {
+    background-color: var(--dark-brown);
+}
+
+.hotel-button-booking:active {
+    color: var(--special-white);
+    background-color: var(--extra-dark-brown);
+}
+
+.hotel-rate {
+    background-color: var(--dark-grey);
+    color: var(--rate-grey);
 }
 
 /* Footer */
