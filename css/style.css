@@ -181,6 +181,16 @@ img {
 
 /* Button search */
 
+.button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
 .button-search {
     color: var(--brand-color);
     background-color: var(--basic-brown);
@@ -230,7 +240,6 @@ img {
     text-transform: uppercase;
     color: var(--light-white);
     background-color: var(--brand-color);
-    border: none;
     border-bottom: 1px dashed var(--basic-blue);
 }
 
@@ -240,7 +249,6 @@ img {
 
 .filter-button:active {
     color: var(--brand-font-color);
-    border: none;
 }
 
 .filter-up,
@@ -278,6 +286,18 @@ img {
     font-size: 21px;
     line-height: 26px;
     text-transform: uppercase;
+}
+
+.hotel-link {
+    color: var(--brand-font-color);
+}
+
+.hotel-link:hover {
+    color: var(--basic-blue);
+}
+
+.hotel-link:active{
+    color: var(--light-white);
 }
 
 .hotel-type,
