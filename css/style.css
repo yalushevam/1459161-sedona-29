@@ -138,15 +138,26 @@ img {
     text-transform: uppercase;
 }
 
+.content-list {
+    list-style: none;
+}
+
 .content {
     background-color: var(--basic-grey);
 }
 
 .features {
-    list-style: none;
     background-color: var(--features-grey);
 }
 
+.features-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 330px;
+    margin: 0;
+    padding: 0;
+}
 
 .features-text {
     font-family: "PT Sans", sans-serif;
@@ -188,6 +199,7 @@ img {
     color: inherit;
     background-color: transparent;
     cursor: pointer;
+    outline: none;
 }
 
 
