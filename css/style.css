@@ -63,19 +63,43 @@ img {
 }
 
 /* Main header */
+
 .main-header {
     background-color: var(--brand-color);
     grid-row: 1/2;
-    display: grid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
 }
 
 .main-header div {
+    position: absolute;
+    top: 0;
     justify-self: center;
+    height: 70px;
 }
 
 .main-navigation {
     list-style: none;
     background-color: var(--brand-color);
+    display: flex;
+}
+
+.main-navigation li:nth-child(1) {
+    padding: 15px 67px 15px 72px;
+}
+
+.main-navigation li:nth-child(2) {
+    padding: 15px 209px 15px 67px;
+}
+
+.main-navigation li:nth-child(3) {
+    padding: 15px 73.5px 15px 209px;
+}
+
+.main-navigation li:nth-child(4) {
+    padding: 15px 72px 15px 73.5px;
 }
 
 .main-navigation a {
@@ -116,7 +140,6 @@ img {
     grid-template-rows: min-content auto min-content;
     margin: 0 auto;
     height: 100%;
-    margin-bottom: -100px;
 }
 
 .grid-container {
@@ -138,6 +161,7 @@ img {
     font-size: 21px;
     line-height: 26px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .title-text {
@@ -146,6 +170,8 @@ img {
     font-size: 14px;
     line-height: 26px;
     text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 51px;
 }
 
 .content-big-left {
@@ -174,22 +200,33 @@ img {
     grid-column: 2/4;
 }
 
-.content-name,
-.features-name {
+.content-name {
     font-family: var(--brand-font);
     font-weight: bold;
     font-size: 21px;
     line-height: 21px;
     text-transform: uppercase;
+    text-align: center;
+    margin-top: 47px;
 }
 
-.content-text,
+.content-text {
+    font-family: var(--brand-font);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 23px;
+}
 .content-number {
     font-family: var(--brand-font);
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;
+    text-align: center;
+    margin-top: 25px;
 }
 
 .content-list {
@@ -217,6 +254,16 @@ img {
     grid-template-rows: 330px;
 }
 
+.features-name {
+    font-family: var(--brand-font);
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 28px;
+}
+
 .features-text {
     font-family: var(--brand-font);
     font-weight: normal;
@@ -224,6 +271,7 @@ img {
     line-height: 21px;
     text-transform: uppercase;
     color: var(--dirty-grey);
+    margin-top: 25px;
 }
 
 .visually-hidden {
@@ -236,14 +284,13 @@ img {
 
 .catalog-center {
     display: grid;
-    grid-template-rows: 217px 90px 450px;
-
 }
 
 /* Offer */
 
 .offer {
-    background: var(--brand-color);
+    background: var(--brand-color);  
+    text-align: center;
 }
 
 .offer-title {
@@ -274,7 +321,6 @@ img {
     outline: none;
 }
 
-
 .button-search {
     color: var(--brand-color);
     background-color: var(--basic-brown);
@@ -283,6 +329,7 @@ img {
     font-size: 21px;
     line-height: 26px;
     text-transform: uppercase;
+    padding: 30px 125px;
 }
 
 .button-search:hover {
@@ -298,11 +345,6 @@ img {
 
 .filter {
     background-color: var(--brand-color);
-    grid-row: 2/3;
-}
-
-.input-filter {
-    grid-row: 1/2;
 }
 
 .filter-text {
@@ -362,13 +404,10 @@ img {
 
 .hotel {
     background-color: var(--brand-color);
-    grid-row: 3/4;
 }
 
 .hotel-list {
     list-style: none;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
 }
 
 .hotel-name {
@@ -447,7 +486,7 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-
+  
 .contacts {
     color: var(--brand-font-color);
     font-family: var(--brand-font);
@@ -455,19 +494,33 @@ img {
     font-size: 21px;
     line-height: 26px;
     text-transform: uppercase;
+    text-align: center;
 }
 
-.contacts a {
+.contacts span {
+    display: inline-block;
+    margin-top: 23px;
+}
+
+.contacts p {
+    color: var(--brand-font-color);
+    margin-top: 9px;
+}
+.contacts a{
     color: var(--brand-font-color);
 }
-
 .socials-list {
     list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 36px;
+    gap: 6px;
 }
 
 .social-button {
     background-color: var(--basic-blue);
     color: var(--brand-color);
+
 }
 
 .social-button:hover {
@@ -485,6 +538,9 @@ img {
     font-size: 14px;
     line-height: 26px;
     text-transform: uppercase;
+text-align: center;
+margin-top: 38px;
+
 }
 
 .copyright-link {
