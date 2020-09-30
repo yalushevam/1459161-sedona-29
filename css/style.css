@@ -50,9 +50,8 @@
 /* Global */
 
 body {
-    width: 1200px;
-}
-
+    width: 100%;
+}    
 a {
     text-decoration: none;
 }
@@ -133,6 +132,9 @@ img {
     color: var(--basic-brown);
 }
 
+.main-decor {
+    height: 509px;
+}
 /* grid */
 
 .container {
@@ -140,6 +142,7 @@ img {
     grid-template-rows: min-content auto min-content;
     margin: 0 auto;
     height: 100%;
+    background-color: var(--shadow-grey);
 }
 
 .grid-container {
@@ -148,11 +151,19 @@ img {
     grid-template-columns: 400px 400px 400px;
 }
 
+.wrapper {
+  width: 1200px;  
+}
+
 /* Center */
 
 .center {
     background-color: var(--brand-color);
     grid-row: 2/3;
+}
+
+.title-block {
+height: 216px;
 }
 
 .title {
