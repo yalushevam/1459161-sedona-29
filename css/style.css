@@ -421,6 +421,22 @@ img {
 .hotel-list {
     list-style: none;
 }
+/* Грид для домашки по странице каталога
+ футер не прилипает в каталоге(
+.hotel-list-item {
+    display: grid;
+    grid-template-columns: 208px 1fr 200px;
+}
+
+.hotel-description {
+ grid-column: 2/3;
+  
+}
+
+.hotel-rate {
+    grid-column: 3/4;
+}
+*/
 
 .hotel-name {
     font-family: var(--brand-font);
