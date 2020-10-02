@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-    --shadow-grey: #888888;
+    --shadow-grey: rgba(0, 1, 1, 0.2);;
     /* тень по бокам   */
 
     --brand-color: #FFFFFF;
@@ -33,8 +33,6 @@
     /* input form  */
     --darkest-grey: #A9A9A9;
     /*details form */
-    --features-grey: rgba(0, 1, 1, 0.2);
-    /* shadow-features */
     --rate-grey: #666666;
 
     --basic-brown: #766357;
@@ -51,7 +49,7 @@
 
 body {
     width: 100%;
-    height: 100%;
+    height: 100%;    
 }
 
 a {
@@ -143,7 +141,7 @@ img {
     display: grid;
     grid-template-rows: min-content auto min-content;
     margin: 0 auto;
-    background-color: var(--shadow-grey);
+    background: #F2F2F2;
 }
 
 .grid-container {
@@ -156,6 +154,7 @@ img {
     width: 1200px;
     height: 100%;
     margin: 0 auto;
+    box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 /* Center */
@@ -357,6 +356,7 @@ img {
 
 .filter {
     background-color: var(--brand-color);
+    margin-left: 73px;
 }
 
 .filter-text {
@@ -365,7 +365,11 @@ img {
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
-    text-transform: uppercase;
+    text-transform: uppercase;   
+}
+
+.input-filter {
+    min-height: 217px;   
 }
 
 .filter-button-selected {
@@ -421,22 +425,23 @@ img {
 .hotel-list {
     list-style: none;
 }
-/* Грид для домашки по странице каталога
- футер не прилипает в каталоге(
+
 .hotel-list-item {
     display: grid;
     grid-template-columns: 208px 1fr 200px;
 }
 
+.hotel-photo {
+    margin: 30px 0 30px 73px;
+}
 .hotel-description {
- grid-column: 2/3;
-  
+    grid-column: 2/3;
+    margin-left: 29px;
 }
 
 .hotel-rate {
     grid-column: 3/4;
 }
-*/
 
 .hotel-name {
     font-family: var(--brand-font);
@@ -444,7 +449,7 @@ img {
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
-    text-transform: uppercase;
+    text-transform: uppercase; 
 }
 
 .hotel-link {
@@ -475,6 +480,7 @@ img {
 .hotel-button-more {
     background-color: var(--basic-blue);
     color: var(--brand-color);
+    padding: 3px 16px 3px 17px;
 }
 
 .hotel-button-more:hover {
@@ -489,6 +495,7 @@ img {
 .hotel-button-booking {
     background-color: var(--basic-brown);
     color: var(--brand-color);
+    padding: 3px 16px 3px 17px;
 }
 
 .hotel-button-booking:hover {
