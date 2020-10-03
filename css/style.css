@@ -438,7 +438,6 @@ img {
 
 .hotel {
     background-color: var(--brand-color);
-    display: flex;
 }
 
 .hotel-list {
@@ -446,19 +445,11 @@ img {
 }
 
 .hotel-list-item {
-    padding: 25px 72px;
-}
-
-.hotel-description { 
     display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
+    flex-wrap: wrap;    
 }
-
-.hotel-name {
-    min-width: 750px;
-    margin-top: 0px;
-    margin-bottom: 5px
+.hotel-photo {
+    margin: 30px 29px 30px 73px;
 }
 
 .hotel-link {
@@ -471,9 +462,6 @@ img {
     text-transform: uppercase; 
 }
 
-.rates { 
-    margin-bottom: 30px;
-}
 
 .hotel-link:hover {
     color: var(--basic-blue);
@@ -500,8 +488,6 @@ img {
     background-color: var(--basic-blue);
     color: var(--brand-color);
     padding: 3px 16px 3px 17px;
-    margin-top: 16px;
-    display: block;
 
 }
 
