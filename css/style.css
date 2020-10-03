@@ -448,10 +448,18 @@ img {
     display: flex;
     flex-wrap: wrap;    
 }
+
 .hotel-photo {
     margin: 30px 29px 30px 73px;
 }
+.booking,
+.details {
+    display: inline-block;
+}
 
+.rates{
+    margin-left: auto;
+}
 .hotel-link {
     color: var(--brand-font-color);
     font-family: var(--brand-font);
@@ -461,7 +469,6 @@ img {
     line-height: 26px;
     text-transform: uppercase; 
 }
-
 
 .hotel-link:hover {
     color: var(--basic-blue);
@@ -488,7 +495,6 @@ img {
     background-color: var(--basic-blue);
     color: var(--brand-color);
     padding: 3px 16px 3px 17px;
-
 }
 
 .hotel-button-more:hover {
