@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-    --shadow-grey: rgba(0, 1, 1, 0.2);;
+    --shadow-grey: rgba(0, 1, 1, 0.2);
     /* тень по бокам   */
 
     --brand-color: #FFFFFF;
@@ -141,7 +141,7 @@ img {
     display: grid;
     grid-template-rows: min-content auto min-content;
     margin: 0 auto;
-    background: #F2F2F2;
+    background: var(--dark-grey);
 }
 
 .grid-container {
@@ -154,7 +154,7 @@ img {
     width: 1200px;
     height: 100%;
     margin: 0 auto;
-    box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+    box-shadow: 0px 5px 15px var(--shadow-grey);
 }
 
 /* Center */
@@ -352,33 +352,46 @@ img {
     background-color: var(--extra-dark-brown);
 }
 
-/* Filter */
+/* Catalog */
 
-.filter {
-    background-color: var(--brand-color);
-    margin-left: 73px;
+.input-filter {
+    min-height: 217px;   
 }
 
-.filter-text {
+.filter {
+    background-color: var(--brand-color); 
+    display: flex;
+    align-items: center;
+}
+
+.filter-result {
     font-family: var(--brand-font);
     font-style: normal;
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
-    text-transform: uppercase;   
+    text-transform: uppercase; 
+    margin-left: 73px;   
 }
 
-.input-filter {
-    min-height: 217px;   
+.filter-sorting {
+    font-family: var(--brand-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase; 
+    margin-left: 46px;
 }
 
 .filter-button-selected {
     font-size: 12px;
     line-height: 18px;
     text-transform: uppercase;
-    color: var(--light-white);
+    color: var(--basic-blue);
     background-color: var(--brand-color);
     border: none;
+    margin-left: 40px;
 }
 
 .filter-button {
@@ -388,6 +401,7 @@ img {
     color: var(--light-white);
     background-color: var(--brand-color);
     border-bottom: 1px dashed var(--basic-blue);
+    margin-left: 32px;
 }
 
 .filter-button:hover {
@@ -396,16 +410,20 @@ img {
 
 .filter-button:active {
     color: var(--brand-font-color);
+    border: none;
 }
 
 .filter-up,
 .filter-up:hover,
 .filter-up:active {
     color: var(--calm-grey);
+    margin-left: auto;
+    margin-right: 12px;
 }
 
 .filter-down {
     color: var(--basic-blue);
+    margin-right: 73px;
 }
 
 .filter-down:hover {
@@ -427,23 +445,20 @@ img {
 }
 
 .hotel-list-item {
-    display: grid;
-    grid-template-columns: 208px 1fr 200px;
+    padding: 0 73px;
 }
 
 .hotel-photo {
-    margin: 30px 0 30px 73px;
-}
-.hotel-description {
-    grid-column: 2/3;
-    margin-left: 29px;
+    margin: 30px 0;
 }
 
-.hotel-rate {
-    grid-column: 3/4;
+.hotel-description { 
+    margin: 23.5px 0 30px 29px;
+
 }
 
-.hotel-name {
+.hotel-link {
+    color: var(--brand-font-color);
     font-family: var(--brand-font);
     font-style: normal;
     font-weight: bold;
@@ -451,9 +466,12 @@ img {
     line-height: 26px;
     text-transform: uppercase; 
 }
+.hotel-name{
+    margin: 0;
+}
 
-.hotel-link {
-    color: var(--brand-font-color);
+.rates { 
+    margin-bottom: 30px;
 }
 
 .hotel-link:hover {
@@ -577,7 +595,6 @@ img {
     text-transform: uppercase;
     text-align: center;
     margin-top: 38px;
-
 }
 
 .copyright-link {
