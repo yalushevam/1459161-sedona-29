@@ -479,7 +479,11 @@ img {
 }
 
 .hotel-rate {
+    display: block;
     margin-bottom: 30px;
+    margin: 47px 0 30px auto;
+    width: 83px;
+    padding: 3px 12px 3px 15px;
     background-color: var(--dark-grey);
     color: var(--rate-grey);
 }
