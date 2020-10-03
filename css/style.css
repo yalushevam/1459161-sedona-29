@@ -443,6 +443,7 @@ img {
 
 .hotel-list {
     list-style: none;
+    margin-right: 72px;
 }
 
 .hotel-list-item {
@@ -470,11 +471,17 @@ img {
     text-transform: uppercase;
     margin-top: 7px;
     margin-bottom: 15.5;
-
 }
 
 .rates {
     margin-left: auto;
+    margin-top: 29px;
+}
+
+.hotel-rate {
+    margin-bottom: 30px;
+    background-color: var(--dark-grey);
+    color: var(--rate-grey);
 }
 
 .hotel-link {
@@ -495,8 +502,6 @@ img {
     color: var(--light-white);
 }
 
-.hotel-type,
-.hotel-price,
 .hotel-button-more,
 .hotel-button-booking,
 .hotel-rate {
@@ -536,11 +541,6 @@ img {
 .hotel-button-booking:active {
     color: var(--special-white);
     background-color: var(--extra-dark-brown);
-}
-
-.hotel-rate {
-    background-color: var(--dark-grey);
-    color: var(--rate-grey);
 }
 
 /* Footer */
