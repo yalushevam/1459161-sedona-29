@@ -19,9 +19,9 @@
             </div>
             <nav>
                 <ul class="main-navigation">
-                    <li><a href="">Информация</a></li>
-                    <li><a href="">Фото и видео</a></li>
-                    <li><a href="">Карта штата</a></li>
+                    <li><a href="blank.html">Информация</a></li>
+                    <li><a href="blank.html">Фото и видео</a></li>
+                    <li><a href="blank.html">Карта штата</a></li>
                     <li><a href="catalog.html" title="Каталог гостиниц">Гостиницы</a></li>
                 </ul>
             </nav>
@@ -98,9 +98,36 @@
                 <p class="offer-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
                 <div>
                     <button class="button button-search" type="button">Поиск гостиницы в седоне</button>
-                    <!-- Здесь будет форма -->
+                    <form action="https://echo.htmlacademy.ru" method="post">
+                            <label for="from">Дата заезда: </label>
+                            <input id="from" name="date" placeholder="24 апреля 2017" type="text">
+                            <!-- svg -->
+                          <label for="to">Дата выезда: </label>
+                         <input id="to" name="date" placeholder="4 июля 2017" type="text">
+                            <!-- svg -->
+                          <div>
+                              <button type="button">
+                                <!-- svg -->
+                              </button>
+                              <button type="button">
+                                <!-- svg -->
+                              </button>
+                              <label for="adults">Взрослые:</label>
+                              <input name="adult" id="adults" placeholder="2" type="text"> 
+                              <button type="button">
+                                <!-- svg -->
+                              </button>
+                              <button type="button">
+                                <!-- svg -->
+                              </button>
+                              <label for="children">Дети:</label>
+                              <input name="child" id="children" placeholder="0" type="text"> 
+                          </div>
+                          <button type="submit">Найти</button>
+                      </form>
                 </div>
             </section>
+
             <div class="map">
                 <img src="https://via.placeholder.com/1199x594" width="1199" height="594" alt="Карта"> <!-- фон вместо img -->
             </div>

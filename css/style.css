@@ -355,7 +355,7 @@ img {
 
 /* Catalog */
 
-.input-filter {
+.filter-form {
     min-height: 217px;
 }
 
@@ -625,6 +625,7 @@ img {
 .copyright-link:active {
     color: var(--darkest-grey);
 }
+
 /* blank */
 
 .blank-text {

@@ -28,29 +28,32 @@
         </header>
 
         <main class="center">
-            <section class="input-filter">
-                <h1 class="visually-hidden">Поиск гостиниц</h1>
-                <!--   <form class="selection-form" method="post">
-                <fieldset class="infrasrtrucure">
-                    <legend>Инфраструктура:</legend>
-                    <input type="checkbox" name="pool" value="Бассейн" id="?" checked>
-                    <label for="?">Бассейн</label>
-                    <input type="checkbox" name="parking" value="Парковка" id="?">
-                    <label for="?">Парковка</label>
-                    <input type="checkbox" name="wifi" value="Парковка" id="?">
-                    <label for="?">Wi-Fi</label>
-              </fielset>
-                <fieldset class="house-type">
-                    <legend>Тип жилья:</legend>
-                    <input type="checkbox" name="hotel" value="Гостиница" id="?" checked>
-                    <label for="?">Гостиница</label>
-                    <input type="checkbox" name="motel" value="Мотель" id="?" checked>
-                    <label for="?">Мотель</label>
-                    <input type="checkbox" name="apartments" value="Апартаменты" id="?" checked>
-                    <label for="?">Апартаменты</label>
-                </fieldset> 
-            <button type="button" name="show">Показать</button>
-                     </form> -->
+            <section class="filter-form">
+                <h1> class="visually-hidden">Поиск гостиницы</h1>
+                <form class="selection-form" echo="https://echo.htmlacademy.ru/" method="post">
+                    <div class="infrasrtrucure">
+                        <h2>Инфраструктура:</h2>
+                        <input type="checkbox" name="pool" value="Бассейн" id="1" checked>
+                        <label for="1">Бассейн</label>
+                        <input type="checkbox" name="parking" value="Парковка" id="2">
+                        <label for="2">Парковка</label>
+                        <input type="checkbox" name="wifi" value="Парковка" id="3">
+                        <label for="3">Wi-Fi</label>
+                    </div>
+                    <div class="house-type">
+                        <h2>Тип жилья:</h2>
+                        <input type="checkbox" name="hotel" value="Гостиница" id="4" checked>
+                        <label for="4">Гостиница</label>
+                        <input type="checkbox" name="motel" value="Мотель" id="5" checked>
+                        <label for="5">Мотель</label>
+                        <input type="checkbox" name="apartments" value="Апартаменты" id="6" checked>
+                        <label for="6">Апартаменты</label>
+                    </div>
+                    <!--<div class="price-filter">
+                    <h2>Стоимость в сутки (р): </h2>
+                  </div>-->
+                    <button type="submit" class="button button-filter-form">Показать</button>
+                </form>
             </section>
 
             <section class="filter">
