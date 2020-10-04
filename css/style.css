@@ -452,7 +452,7 @@ img {
 }
 
 .hotel-photo {
-    margin: 30px 29px 30px 73px;
+    margin: 30px 29px 27px 73px;
 }
 
 .booking,
@@ -624,4 +624,17 @@ img {
 
 .copyright-link:active {
     color: var(--darkest-grey);
+}
+/* blank */
+
+.blank-text {
+    font-family: var(--blank-font);
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.blank-text a {
+    color: var(--extra-dark-blue);
 }
