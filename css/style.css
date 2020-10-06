@@ -464,7 +464,7 @@ img {
 }
 
 .find-button:active {
-    background-color: #5496bd;
+    background-color:var(--extra-dark-blue);
     color: var(--special-white);
 }
 
