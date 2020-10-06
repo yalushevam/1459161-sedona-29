@@ -388,9 +388,10 @@ img {
 
 .map {
     width: 1199px;
-    height: 593px;
+    height: 474px;
     background-image: url("../img/map.png");
     background-repeat: no-repeat;
+    overflow: visible;
 }
 
 .form {
@@ -702,6 +703,7 @@ img {
     grid-row: 3/4;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    z-index: 2;
 }
 
 .contacts {
