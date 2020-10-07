@@ -401,159 +401,148 @@ img {
 
 /* форма */
 
-.form {
-    position: relative;
-    width: 568px;
+.modal {
+    max-width: 568px;
     margin: 0 auto;
     background-color: var(--brand-color);
     box-shadow: 0px 7px 15px var(--shadow-form);
     box-sizing: border-box;
     padding: 55px;
-    display: grid;
-    grid-template-columns: 112px 114px auto 114px;
-    grid-template-rows: min-content min-content min-content;
 }
 
-.first-column {
-    grid-column: 1/2;
+.modal-label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
-.third-column {
-    grid-row: 3/4;
-    grid-column: 3/4;
-}
-
-.form label {
+.modal-label-text {
     font-family: var(--brand-font);
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 26px;
     text-transform: uppercase;
+    display: inline-block;
+    width: 110px; 
+    text-align: left;  
 }
 
-.form-field {
-    width: 346px;
-    min-height: 36px;
+.modal-field {
+    height: 36px;
     background-color: var(--dark-grey);
     border: none;
     outline: none;
-    margin-bottom: 30px;
     padding: 0;
+    width: 346px;
     box-sizing: border-box;
-    padding-left: 6px;
-    grid-column: 2/-1;
+    padding: 6px 7px 6px 12px;
 }
 
-.input-adults {
-    grid-column: 4/5;
-    grid-row: 3/4;
-}
-
-.form-field:hover {
-    border: none;
-    outline: none;
+.modal-field:hover {
     background-color: var(--form-field-hover);
 }
 
-.form-field:focus {
+.modal-field:focus {
     border: 2px solid var(--form-field-border);
-    outline: none;
     background-color: var(--brand-color);
 }
 
-.form-calendar {
-    border: none;
-    background-color: transparent;
-    outline: none;
+.modal-icon {
     position: absolute;
+    right: 7px;
 }
 
-.first-calendar {
-    top: 60px;
-    left: 470px;
-}
-
-.second-calendar {
-    top: 125px;
-    left: 470px;
-}
-
-.form-calendar:hover path {
+.modal-icon:hover path {
     fill: var(--brand-color);
 }
 
-.form-calendar:active path {
+.modal-icon:active path {
     fill: var(--basic-blue);
 }
 
-.input-number {
-    max-width: 114px;
+.modal-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal-label-input {
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 54px;
+}
+
+.modal-wrapper-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.modal-number-input {
+    max-width: 38px;
     min-height: 38px;
     padding: 0;
     background-color: var(--dark-grey);
     border: none;
-    outline: none;
+    text-align: center;
     box-sizing: border-box;
-    padding: 0 38px;
-    margin-bottom: 54px;
+    padding: 0;  
 }
 
-.input-number:hover {
+.modal-number-input:hover {
     border: none;
-    outline: none;
     background-color: var(--form-field-hover);
 }
 
-.input-number:focus {
+.modal-number-input:focus {
     border: 2px solid var(--form-field-border);
     outline: none;
     background-color: var(--brand-color);
 }
 
-.button-symbol {
+input::-webkit-input-placeholder {
+    font-family: var(--brand-font);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: var(--brand-font-color);   
+}
+
+.button-modal {
     border: none;
     outline: none;
     background-color: transparent;
 }
 
-.button-symbol:hover path,
-.button-symbol:hover rect {
+.button-modal:hover path,
+.button-modal:hover rect {
     fill: var(--brand-font-color);
 }
 
-.button-symbol:active path,
-.button-symbol:active rect {
+.button-modal:active path,
+.button-modal:active rect {
     fill: var(--basic-blue);
 }
 
-.adults-minus {
+.button-minus {
     position: absolute;
-    top: 193px;
-    left: 177px;
+    top: 20%;
+    left: 20%;
 }
 
-.adults-plus {
+.button-plus {
     position: absolute;
-    top: 197px;
-    left: 250px;
-}
-
-.children-minus {
-    position: absolute;
-    top: 193px;
-    left: 405px;
-}
-
-.children-plus {
-    position: absolute;
-    top: 197px;
-    left: 475px;
+    top: 0;
+    left: 0;
 }
 
 .find-button {
-    grid-column: 1/-1;
-    grid-row: 4/5;
     font-family: var(--brand-font);
     font-style: normal;
     font-weight: bold;
