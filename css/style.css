@@ -2,14 +2,14 @@
 
 :root {
     --shadow-grey: rgba(0, 1, 1, 0.2);
-    
+
     --brand-color: #FFFFFF;
     --brand-font-color: #000000;
 
     --dirty-white: rgba(255, 255, 255, 0.9);
     --special-white: rgba(255, 255, 255, 0.3);
     --light-white: rgba(0, 0, 0, 0.3);
-    --shadow-form:rgba(0, 1, 1, 0.15);
+    --shadow-form: rgba(0, 1, 1, 0.15);
 
     --dark-black: #231F20;
 
@@ -39,7 +39,7 @@
 body {
     width: 100%;
     height: 100%;
-    
+
 }
 
 a {
@@ -398,23 +398,38 @@ img {
     color: var(--special-white);
     background-color: var(--extra-dark-brown);
 }
+
+/* форма */
+
 .form {
+    position: relative;
     width: 568px;
     margin: 0 auto;
     background-color: var(--brand-color);
-    box-shadow:  0px 7px 15px var(--shadow-form);
+    box-shadow: 0px 7px 15px var(--shadow-form);
     box-sizing: border-box;
     padding: 55px;
-    display: none;
+    display: grid;
+    grid-template-columns: 112px 114px auto 114px;
+    grid-template-rows: min-content min-content min-content;
+}
+
+.first-column {
+    grid-column: 1/2;
+}
+
+.third-column {
+    grid-row: 3/4;
+    grid-column: 3/4;
 }
 
 .form label {
     font-family: var(--brand-font);
     font-style: normal;
-font-weight: bold;
-font-size: 14px;
-line-height: 26px;
-text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
 }
 
 .form-field {
@@ -423,56 +438,141 @@ text-transform: uppercase;
     background-color: var(--dark-grey);
     border: none;
     outline: none;
-    margin-left: 5px;
     margin-bottom: 30px;
+    padding: 0;
+    box-sizing: border-box;
+    padding-left: 6px;
+    grid-column: 2/-1;
 }
 
-.form-field:hover{
+.input-adults {
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+
+.form-field:hover {
     border: none;
     outline: none;
     background-color: var(--form-field-hover);
 }
 
-.form-field:focus{
+.form-field:focus {
     border: 2px solid var(--form-field-border);
     outline: none;
-    background-color: var(--brand-color);   
+    background-color: var(--brand-color);
 }
 
 .form-calendar {
- border: none;
- background-color: var(--brand-color);
- outline: none;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    position: absolute;
+}
+
+.first-calendar {
+    top: 60px;
+    left: 470px;
+}
+
+.second-calendar {
+    top: 125px;
+    left: 470px;
 }
 
 .form-calendar:hover path {
-fill:var(--brand-color);
+    fill: var(--brand-color);
 }
 
 .form-calendar:active path {
-fill: var(--basic-blue);
+    fill: var(--basic-blue);
+}
+
+.input-number {
+    max-width: 114px;
+    min-height: 38px;
+    padding: 0;
+    background-color: var(--dark-grey);
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    padding: 0 38px;
+    margin-bottom: 54px;
+}
+
+.input-number:hover {
+    border: none;
+    outline: none;
+    background-color: var(--form-field-hover);
+}
+
+.input-number:focus {
+    border: 2px solid var(--form-field-border);
+    outline: none;
+    background-color: var(--brand-color);
+}
+
+.button-symbol {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.button-symbol:hover path,
+.button-symbol:hover rect {
+    fill: var(--brand-font-color);
+}
+
+.button-symbol:active path,
+.button-symbol:active rect {
+    fill: var(--basic-blue);
+}
+
+.adults-minus {
+    position: absolute;
+    top: 193px;
+    left: 177px;
+}
+
+.adults-plus {
+    position: absolute;
+    top: 197px;
+    left: 250px;
+}
+
+.children-minus {
+    position: absolute;
+    top: 193px;
+    left: 405px;
+}
+
+.children-plus {
+    position: absolute;
+    top: 197px;
+    left: 475px;
 }
 
 .find-button {
+    grid-column: 1/-1;
+    grid-row: 4/5;
     font-family: var(--brand-font);
     font-style: normal;
     font-weight: bold;
     font-size: 21px;
     line-height: 27px;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     background-color: var(--basic-blue);
-    color:var(--brand-color);
+    color: var(--brand-color);
     padding: 16px 196px;
 }
 
 .find-button:hover {
-background-color: var(--dark-blue);
+    background-color: var(--dark-blue);
 }
 
 .find-button:active {
     background-color: var(--extra-dark-blue);
     color: var(--special-white);
-    }
+}
 
 /* Footer */
 
