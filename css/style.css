@@ -58,6 +58,7 @@ img {
 }
 
 .wrapper {
+    position: relative;
     width: 1200px;
     height: 100%;
     margin: 0 auto;
@@ -344,6 +345,7 @@ img {
 }
 
 .offer {
+    position: relative;
     background: var(--brand-color);
     text-align: center;
 }
@@ -401,12 +403,16 @@ img {
 /* форма */
 
 .modal {
+    position: absolute;
+    top:100%;
+    left: 316px;
     max-width: 568px;
     margin: 0 auto;
     background-color: var(--brand-color);
     box-shadow: 0px 7px 15px var(--shadow-form);
     box-sizing: border-box;
     padding: 55px;
+    z-index: 5;
 }
 
 .modal-label {
@@ -564,11 +570,25 @@ input::-webkit-input-placeholder {
     color: var(--special-white);
 }
 
+/* карта */
+
+.map {
+height: 594px;
+background-image: url(../img/map.png);
+top: 0;
+padding: 0;
+margin: 0;
+}
+
+
 /* Footer */
 
 .page-footer {
+    position: absolute;
+    bottom:0;
     background-color: var(--dirty-white);
     min-height: 125px;
+    min-width: 1200px;
     grid-row: 3/4;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
