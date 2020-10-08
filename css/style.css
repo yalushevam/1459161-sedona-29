@@ -404,7 +404,7 @@ img {
 
 .modal {
     position: absolute;
-    top:100%;
+    top: 100%;
     left: 316px;
     max-width: 568px;
     margin: 0 auto;
@@ -573,11 +573,11 @@ input::-webkit-input-placeholder {
 /* карта */
 
 .map {
-height: 594px;
-background-image: url(../img/map.png);
-top: 0;
-padding: 0;
-margin: 0;
+    height: 594px;
+    background-image: url(../img/map.png);
+    top: 0;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -585,7 +585,7 @@ margin: 0;
 
 .page-footer {
     position: absolute;
-    bottom:0;
+    bottom: 0;
     background-color: var(--dirty-white);
     min-height: 125px;
     min-width: 1200px;
@@ -593,6 +593,15 @@ margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     z-index: 2;
+}
+
+.page-footer-catalog {
+    background-color: var(--dirty-white);
+    min-height: 125px;
+    min-width: 1200px;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .contacts {
@@ -676,6 +685,14 @@ margin: 0;
 }
 
 /* Catalog */
+
+.wrapper-catalog {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: var(--brand-color);
+    box-shadow: 0px 5px 15px var(--shadow-grey);
+}
 
 .catalog-center {
     display: grid;
