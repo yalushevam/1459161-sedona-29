@@ -432,10 +432,12 @@ img {
     display: inline-block;
     width: 110px;
     text-align: left;
+    order: -1;
 }
 
 .label-text-children {
     width: 65px;
+    margin-left: 53px;
 }
 
 .modal-field {
@@ -474,13 +476,7 @@ img {
 .modal-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-
-.modal-label-input {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: left;
     margin-bottom: 54px;
 }
 
