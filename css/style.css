@@ -733,6 +733,44 @@ input::-webkit-input-placeholder {
     text-transform: uppercase;
 }
 
+.check {
+    padding-left: 40px;
+}
+.check-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+
+.check__box {
+    position: absolute;
+    width:23px;
+    height:23px;
+    background-image: url(../img/checkbox-off.svg);
+    margin-left: -40px;
+}
+
+.check-input:checked + .check__box {
+    background-image: url(../img/checkbox-on.svg);
+}
+
+.check-input:hover + .check__box {
+    background-image: url(../img/checkbox-off.svg);
+}
+
+.check-input:checked:hover + .check__box {
+    background-image: url(../img/checkbox-on.svg);
+}
+
+.check-input:disabled + .check__box {
+    background-image: url(../img/checkbox-off-disabled.svg);
+}
+
+.check-input:checked:disabled + .check__box {
+    background-image: url(../img/checkbox-on-disabled.svg);
+}
+
 .infrastructure {
     margin-left: 72px;
 }
