@@ -721,6 +721,7 @@ input::-webkit-input-placeholder {
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;
+    margin-top: 25px;
 }
 
 .selector-fieldset legend {
@@ -733,9 +734,15 @@ input::-webkit-input-placeholder {
     text-transform: uppercase;
 }
 
+.selector-list li {
+
+    margin-bottom: 24px;
+}
+
 .check {
     padding-left: 40px;
 }
+
 .check-input {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -745,8 +752,8 @@ input::-webkit-input-placeholder {
 
 .check__box {
     position: absolute;
-    width:23px;
-    height:23px;
+    width: 23px;
+    height: 23px;
     background-image: url(../img/checkbox-off.svg);
     margin-left: -40px;
 }
@@ -956,6 +963,7 @@ input::-webkit-input-placeholder {
     justify-content: flex-end;
     gap: 12px;
 }
+
 .direction path {
     fill: var(--calm-grey);
 }
@@ -1017,7 +1025,7 @@ input::-webkit-input-placeholder {
     line-height: 21px;
     text-transform: uppercase;
     margin-top: 7px;
-    margin-bottom: 15.5;
+    margin-bottom: 15.5px;
 }
 
 .rates {
@@ -1029,6 +1037,7 @@ input::-webkit-input-placeholder {
     justify-content: flex-end;
     gap: 5px;
 }
+
 .hotel-rate {
     display: block;
     margin: 47px 0 0 auto;
