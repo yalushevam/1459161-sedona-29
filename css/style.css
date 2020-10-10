@@ -860,6 +860,7 @@ input::-webkit-input-placeholder {
     background-color: var(--brand-color);
     display: flex;
     align-items: center;
+    margin-right: 73px;
 }
 
 .filter-result {
@@ -869,7 +870,7 @@ input::-webkit-input-placeholder {
     font-size: 21px;
     line-height: 26px;
     text-transform: uppercase;
-    margin-left: 73px;
+    margin: 29px 0 31px 73px;
 }
 
 .filter-sorting {
@@ -911,25 +912,22 @@ input::-webkit-input-placeholder {
     border: none;
 }
 
-.filter-up,
-.filter-up:hover,
-.filter-up:active {
-    color: var(--calm-grey);
+.buttons-direction {
     margin-left: auto;
-    margin-right: 12px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+.direction path {
+    fill: var(--calm-grey);
 }
 
-.filter-down {
-    color: var(--basic-blue);
-    margin-right: 73px;
+.direction:hover path {
+    fill: var(--brand-font-color);
 }
 
-.filter-down:hover {
-    color: var(--brand-font-color);
-}
-
-.filter-down:active {
-    color: var(--basic-blue);
+.direction:active path {
+    fill: var(--basic-blue);
 }
 
 /* Hotels */
@@ -988,6 +986,11 @@ input::-webkit-input-placeholder {
     margin: auto 0 30px auto;
 }
 
+.stars {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+}
 .hotel-rate {
     display: block;
     margin: 47px 0 0 auto;
