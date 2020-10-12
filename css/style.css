@@ -261,6 +261,7 @@ img {
 .features-list {
     list-style: none;
     padding: 0;
+    margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 330px;
@@ -451,7 +452,14 @@ img {
     width: 346px;
     box-sizing: border-box;
     padding: 6px 7px 6px 12px;
+    font-family: var(--brand-font);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
 }
+
 
 .modal-field:hover {
     background-color: var(--form-field-hover);
@@ -489,6 +497,12 @@ img {
 }
 
 .modal-number-input {
+    font-family: var(--brand-font);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
     max-width: 38px;
     min-height: 38px;
     padding: 0;
@@ -705,7 +719,7 @@ input::-webkit-input-placeholder {
 .selector-fieldset {
     padding: 0;
     margin: 0;
-    margin-top: 26.5px;
+    margin-top: 26px;
     border: none;
 }
 
@@ -735,8 +749,7 @@ input::-webkit-input-placeholder {
 }
 
 .selector-list li {
-
-    margin-bottom: 24px;
+    margin-bottom: 25px;
 }
 
 .check {
@@ -752,21 +765,15 @@ input::-webkit-input-placeholder {
 
 .check__box {
     position: absolute;
-    width: 23px;
+    width: 27px;
     height: 23px;
     background-image: url(../img/checkbox-off.svg);
+    background-repeat: no-repeat;
     margin-left: -40px;
+    cursor: pointer;
 }
 
 .check-input:checked + .check__box {
-    background-image: url(../img/checkbox-on.svg);
-}
-
-.check-input:hover + .check__box {
-    background-image: url(../img/checkbox-off.svg);
-}
-
-.check-input:checked:hover + .check__box {
     background-image: url(../img/checkbox-on.svg);
 }
 
@@ -783,7 +790,7 @@ input::-webkit-input-placeholder {
 }
 
 .house-type {
-    margin-left: 119px;
+    margin-left: 118px;
 }
 
 .price-range {
@@ -802,7 +809,7 @@ input::-webkit-input-placeholder {
     border-radius: 2px;
     width: 313px;
     height: 32px;
-    margin-top: 10.5px;
+    margin-top: 10px;
 }
 
 .price-controls .price-controls-input {
@@ -929,6 +936,7 @@ input::-webkit-input-placeholder {
 }
 
 .filter-button-selected {
+    font-family: var(--brand-font);
     font-size: 12px;
     line-height: 18px;
     text-transform: uppercase;
@@ -939,6 +947,7 @@ input::-webkit-input-placeholder {
 }
 
 .filter-button {
+    font-family: var(--brand-font);
     font-size: 12px;
     line-height: 18px;
     text-transform: uppercase;
@@ -973,6 +982,14 @@ input::-webkit-input-placeholder {
 }
 
 .direction:active path {
+    fill: var(--basic-blue);
+}
+
+.direction-up path{
+    fill: var(--calm-grey);
+}
+
+.direction-down path {
     fill: var(--basic-blue);
 }
 
@@ -1025,7 +1042,7 @@ input::-webkit-input-placeholder {
     line-height: 21px;
     text-transform: uppercase;
     margin-top: 7px;
-    margin-bottom: 15.5px;
+    margin-bottom: 16px;
 }
 
 .rates {
