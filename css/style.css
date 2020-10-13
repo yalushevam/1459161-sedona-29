@@ -176,10 +176,6 @@ img {
     bottom: 0;
 }
 
-.main-title {
-    min-height: 173.5px;
-}
-
 .title {
     font-family: var(--brand-font);
     font-weight: bold;
@@ -187,7 +183,9 @@ img {
     line-height: 26px;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 42.5px;
+    margin: 42px auto 0;
+    width: 460px;
+
 }
 
 .title-text {
@@ -197,7 +195,7 @@ img {
     line-height: 26px;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 51px;
+    margin: 42px auto 51px;
 }
 
 .grid-container {
@@ -229,7 +227,8 @@ img {
     line-height: 21px;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 47px;
+    margin: 47px auto 0;
+    width: 150px;
 }
 
 .content-number {
@@ -249,7 +248,8 @@ img {
     line-height: 21px;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 23px;
+    margin: 23px auto 0;
+    width: 310px;
 }
 
 .features {
@@ -285,7 +285,9 @@ img {
     line-height: 21px;
     text-transform: uppercase;
     color: var(--dirty-grey);
-    margin-top: 25px;
+    margin: 25px auto 0;
+    width:285px;
+    text-align: center;
 }
 
 .features-apartment:before {
@@ -293,7 +295,7 @@ img {
     content: "";
     width: 75px;
     height: 72px;
-    margin: 50px auto 28px;
+    margin: 60px auto 28px;
     background-image: url("../img/apartments.svg");
     background-repeat: no-repeat;
 }
@@ -303,7 +305,7 @@ img {
     content: "";
     width: 75px;
     height: 70px;
-    margin: 51px auto 28px;
+    margin: 60px auto 28px;
     background-image: url("../img/food.svg");
     background-repeat: no-repeat;
 }
@@ -345,6 +347,7 @@ img {
     display: grid;
     grid-template-columns: 400px 400px 400px;
     padding: 0;
+    margin: 0;
 }
 
 .offer {
@@ -359,7 +362,7 @@ img {
     font-size: 30px;
     line-height: 24px;
     text-transform: uppercase;
-    margin-top: 58px;
+    margin-top: 56px;
 }
 
 .offer-info {
