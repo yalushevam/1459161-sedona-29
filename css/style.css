@@ -84,7 +84,6 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 56px;
 }
 
 .main-header div {
@@ -98,7 +97,8 @@ img {
     list-style: none;
     background-color: var(--brand-color);
     display: flex;
-    padding: 0;
+    padding: 14px 0 16px;
+    margin: 0;
 }
 
 .main-navigation li:nth-child(1) {
@@ -110,11 +110,11 @@ img {
 }
 
 .main-navigation li:nth-child(3) {
-    padding: 0 73.5px 0 209px;
+    padding: 0 73px 0 209px;
 }
 
 .main-navigation li:nth-child(4) {
-    padding: 0 72px 0 73.5px;
+    padding: 0 72px 0 74px;
 }
 
 .main-navigation a {
@@ -161,7 +161,7 @@ img {
     height: 350px;
     background-image: url("../img/welcome.png");
     background-repeat: no-repeat;
-    top: 50%;
+    top: 49%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -195,7 +195,7 @@ img {
     line-height: 26px;
     text-transform: uppercase;
     text-align: center;
-    margin: 42px auto 51px;
+    margin: 43px auto 52px;
 }
 
 .grid-container {
@@ -228,7 +228,7 @@ img {
     text-transform: uppercase;
     text-align: center;
     margin: 47px auto 0;
-    width: 150px;
+    width: 151px;
 }
 
 .content-number {
@@ -248,8 +248,16 @@ img {
     line-height: 21px;
     text-transform: uppercase;
     text-align: center;
-    margin: 23px auto 0;
+    margin: 25px auto 0;
     width: 310px;
+}
+
+.content-block {
+    width: 280px;
+}
+
+.content-block-small {
+    width:255px;
 }
 
 .features {
@@ -285,8 +293,8 @@ img {
     line-height: 21px;
     text-transform: uppercase;
     color: var(--dirty-grey);
-    margin: 25px auto 0;
-    width:285px;
+    margin: 26px auto 0;
+    width: 285px;
     text-align: center;
 }
 
@@ -295,7 +303,7 @@ img {
     content: "";
     width: 75px;
     height: 72px;
-    margin: 60px auto 28px;
+    margin: 60px auto 27px;
     background-image: url("../img/apartments.svg");
     background-repeat: no-repeat;
 }
@@ -305,7 +313,7 @@ img {
     content: "";
     width: 75px;
     height: 70px;
-    margin: 60px auto 28px;
+    margin: 61px auto 28px;
     background-image: url("../img/food.svg");
     background-repeat: no-repeat;
 }
@@ -315,7 +323,7 @@ img {
     content: "";
     width: 64px;
     height: 77px;
-    margin: 55px auto 28px;
+    margin: 55px auto 27px;
     background-image: url("../img/souvernirs.svg");
     background-repeat: no-repeat;
 }
@@ -334,6 +342,7 @@ img {
 .content-right {
     background-color: var(--basic-blue);
     grid-column: 2/4;
+    padding-top: 3px;
 }
 
 .content {
@@ -362,17 +371,21 @@ img {
     font-size: 30px;
     line-height: 24px;
     text-transform: uppercase;
-    margin-top: 56px;
+    margin: 56px auto 0;
 }
 
 .offer-info {
     font-family: var(--brand-font);
     font-weight: normal;
     font-size: 14px;
-    line-height: 21px;
+    line-height: 24px;
     text-transform: uppercase;
+    width: 450px;
+    margin: 32px auto 45px;
 }
-
+.offer-info::first-line {
+    width: 400px;
+}
 /* Button search */
 
 .button {
@@ -605,17 +618,15 @@ input::-webkit-input-placeholder {
     position: absolute;
     bottom: 0;
     background-color: var(--dirty-white);
-    min-height: 125px;
     min-width: 1200px;
     grid-row: 3/4;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    z-index: 2;
+    z-index: 2;   
 }
 
 .page-footer-catalog {
     background-color: var(--dirty-white);
-    min-height: 125px;
     min-width: 1200px;
     grid-row: 3/4;
     display: grid;
@@ -628,7 +639,7 @@ input::-webkit-input-placeholder {
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
-    text-transform: uppercase;
+    text-transform: uppercase; 
     text-align: center;
 }
 
@@ -639,7 +650,7 @@ input::-webkit-input-placeholder {
 
 .contacts p {
     color: var(--brand-font-color);
-    margin-top: 9px;
+    margin: 9px auto 36px;
 }
 
 .contacts a {
@@ -651,7 +662,7 @@ input::-webkit-input-placeholder {
     display: flex;
     justify-content: center;
     padding: 0;
-    margin-top: 36px;
+    margin-top: 35px;
     gap: 6px;
 }
 
