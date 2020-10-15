@@ -432,10 +432,11 @@ img {
     box-sizing: border-box;
     padding: 55px;
     z-index: 100;
+    
 }
 
 .modal-unactive {
-    display: none;
+    display: none;   
 }
 
 .modal-label {
@@ -641,6 +642,11 @@ input::-webkit-input-placeholder {
     line-height: 26px;
     text-transform: uppercase; 
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-left: 70px;
 }
 
 .contacts span {
@@ -693,15 +699,16 @@ input::-webkit-input-placeholder {
     text-transform: uppercase;
     text-align: center;
     display: flex;
-    margin-top: 38px;
     justify-content: center;
+    align-items: center;
 }
 
 .copyright span {
-    margin: 11px 8px 45px 0;
+    margin-right: 9px;
 }
 
 .copyright-link {
+    margin-right: 71px;
     color: var(--dark-black);
 }
 
