@@ -4,7 +4,7 @@
     --shadow-grey: rgba(0, 1, 1, 0.2);
 
     --brand-color: #FFFFFF;
-    --brand-font-color: #000000;
+    --basic-black: #000000;
 
     --dirty-white: rgba(255, 255, 255, 0.9);
     --special-white: rgba(255, 255, 255, 0.3);
@@ -32,8 +32,6 @@
     --form-field-border: #E5E5E5;
 
     --range-bg: #ABABAB;
-
-    --bg-map: #00FA9A;
 
     --brand-font: "PT Sans", Arial, sans-serif;
 }
@@ -126,7 +124,7 @@ img {
     font-size: 14px;
     line-height: 26px;
     text-transform: uppercase;
-    color: var(--brand-font-color);
+    color: var(--basic-black);
 }
 
 .main-navigation a:hover {
@@ -187,7 +185,6 @@ img {
     text-align: center;
     margin: 42px auto 0;
     width: 460px;
-
 }
 
 .title-text {
@@ -504,7 +501,6 @@ img {
     text-transform: uppercase;
 }
 
-
 .modal-field:hover {
     background-color: var(--form-field-hover);
 }
@@ -521,7 +517,7 @@ img {
 }
 
 .modal-icon:hover path {
-    fill: var(--brand-font-color);
+    fill: var(--basic-black);
 }
 
 .modal-icon:active path {
@@ -576,7 +572,7 @@ input::-webkit-input-placeholder {
     font-size: 14px;
     line-height: 26px;
     text-transform: uppercase;
-    color: var(--brand-font-color);
+    color: var(--basic-black);
 }
 
 .button-modal {
@@ -591,7 +587,7 @@ input::-webkit-input-placeholder {
 
 .button-modal:hover path,
 .button-modal:hover rect {
-    fill: var(--brand-font-color);
+    fill: var(--basic-black);
 }
 
 .button-modal:active path,
@@ -632,7 +628,7 @@ input::-webkit-input-placeholder {
 
 .map {
     height: 594px;
-    background-image: var(--bg-map) url(../img/map.png);
+    background: var(--basic-grey) url(../img/map.png);
     top: 0;
     padding: 0;
     margin: 0;
@@ -660,7 +656,7 @@ input::-webkit-input-placeholder {
 }
 
 .contacts {
-    color: var(--brand-font-color);
+    color: var(--basic-black);
     font-family: var(--brand-font);
     font-weight: bold;
     font-size: 21px;
@@ -681,12 +677,12 @@ input::-webkit-input-placeholder {
 }
 
 .contacts p {
-    color: var(--brand-font-color);
+    color: var(--basic-black);
     margin: 9px auto 36px;
 }
 
 .contacts a {
-    color: var(--brand-font-color);
+    color: var(--basic-black);
 }
 
 .socials-list {
@@ -716,7 +712,7 @@ input::-webkit-input-placeholder {
     background-color: var(--extra-dark-blue);
 }
 
-.social-button:active path{
+.social-button:active path {
     fill: var(--special-white);
 }
 
@@ -960,7 +956,7 @@ input::-webkit-input-placeholder {
 
 .button-selector:hover {
     background-color: var(--brand-color);
-    color: var(--brand-font-color);
+    color: var(--basic-black);
 }
 
 .filter {
@@ -1020,7 +1016,7 @@ input::-webkit-input-placeholder {
 }
 
 .filter-button:active {
-    color: var(--brand-font-color);
+    color: var(--basic-black);
     border: none;
 }
 
@@ -1036,7 +1032,7 @@ input::-webkit-input-placeholder {
 }
 
 .direction:hover path {
-    fill: var(--brand-font-color);
+    fill: var(--basic-black);
 }
 
 .direction:active path {
@@ -1097,7 +1093,7 @@ input::-webkit-input-placeholder {
 
 .booking p,
 .details p {
-    color: var(--brand-font-color);
+    color: var(--basic-black);
     font-family: var(--brand-font);
     font-style: normal;
     font-weight: normal;
@@ -1134,7 +1130,7 @@ input::-webkit-input-placeholder {
 }
 
 .hotel-link {
-    color: var(--brand-font-color);
+    color: var(--basic-black);
     font-family: var(--brand-font);
     font-style: normal;
     font-weight: bold;
