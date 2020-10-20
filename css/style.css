@@ -54,6 +54,7 @@ img {
 
 .container {
     display: grid;
+    grid-template-rows: -webkit-min-content auto -webkit-min-content;
     grid-template-rows: min-content auto min-content;
     margin: 0 auto;
     background: var(--dark-grey);
@@ -427,7 +428,26 @@ img {
     box-shadow: 0px 7px 15px var(--shadow-form);
     z-index: 100;
     box-sizing: border-box;
-    animation: bounce 0.6s;
+    -webkit-animation: bounce 0.6s;
+            animation: bounce 0.6s;
+}
+
+@-webkit-keyframes bounce {
+    0% {
+        transform: translateY(-2000px);
+    }
+
+    70% {
+        transform: translateY(30px);
+    }
+
+    90% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 @keyframes bounce {
@@ -801,8 +821,8 @@ input::-webkit-input-placeholder {
 .check-input {
     position: absolute;
     -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+       -moz-appearance: none;
+            appearance: none;
 }
 
 .check__box {
