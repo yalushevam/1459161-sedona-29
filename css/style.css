@@ -79,11 +79,11 @@ img {
 /* Header */
 
 .main-header {
-    background-color: var(--brand-color);
     grid-row: 1/2;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--brand-color);
 }
 
 .main-header div {
@@ -95,10 +95,10 @@ img {
 
 .main-navigation {
     list-style: none;
-    background-color: var(--brand-color);
     display: flex;
-    padding: 14px 0 16px;
     margin: 0;
+    padding: 14px 0 16px;
+    background-color: var(--brand-color);
 }
 
 .main-navigation li:nth-child(1) {
@@ -144,8 +144,8 @@ img {
 /* Main content*/
 
 .center {
-    background-color: var(--brand-color);
     grid-row: 2/3;
+    background-color: var(--brand-color);
 }
 
 .main-decor {
@@ -169,14 +169,15 @@ img {
 .main-decor-fonts::after {
     position: absolute;
     content: "";
-    height: 57px;
     width: 1200px;
+    height: 57px;
     background-image: url("../img/border.png");
     background-repeat: no-repeat;
     bottom: 0;
 }
 
 .title {
+    width: 460px;
     font-family: var(--brand-font);
     font-weight: bold;
     font-size: 21px;
@@ -184,7 +185,6 @@ img {
     text-transform: uppercase;
     text-align: center;
     margin: 42px auto 0;
-    width: 460px;
 }
 
 .title-text {
@@ -204,7 +204,6 @@ img {
 }
 
 .content-big-left {
-    color: var(--brand-color);
     grid-column: 1/5;
     grid-row: 1/2;
     display: grid;
@@ -212,14 +211,16 @@ img {
     background: var(--basic-brown) url("../img/town.jpg");
     background-position: right;
     background-repeat: no-repeat;
+    color: var(--brand-color);
 }
 
 .content-left {
-    background-color: var(--basic-blue);
     grid-column: 1/2;
+    background-color: var(--basic-blue);
 }
 
 .content-name {
+    width: 151px;
     font-family: var(--brand-font);
     font-weight: bold;
     font-size: 21px;
@@ -227,7 +228,6 @@ img {
     text-transform: uppercase;
     text-align: center;
     margin: 47px auto 0;
-    width: 151px;
 }
 
 .content-number {
@@ -241,6 +241,7 @@ img {
 }
 
 .content-text {
+    width: 310px;
     font-family: var(--brand-font);
     font-weight: normal;
     font-size: 14px;
@@ -248,7 +249,6 @@ img {
     text-transform: uppercase;
     text-align: center;
     margin: 25px auto 0;
-    width: 310px;
 }
 
 .content-block {
@@ -260,18 +260,18 @@ img {
 }
 
 .features {
-    background-color: var(--brand-color);
     grid-column: 1/5;
     grid-row: 2/3;
+    background-color: var(--brand-color);
 }
 
 .features-list {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 330px;
+    margin: 0;
+    padding: 0;
 }
 
 .features-name {
@@ -286,15 +286,15 @@ img {
 }
 
 .features-text {
+    width: 285px;
     font-family: var(--brand-font);
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;
     color: var(--dirty-grey);
-    margin: 26px auto 0;
-    width: 285px;
     text-align: center;
+    margin: 26px auto 0;
 }
 
 .features-apartment:before {
@@ -328,40 +328,40 @@ img {
 }
 
 .content-big-right {
-    color: var(--brand-color);
     grid-column: 1/5;
     grid-row: 3/4;
     display: grid;
     grid-template-columns: 800px 400px;
+    color: var(--brand-color);
     background: var(--basic-brown) url("../img/bridge.jpg");
     background-position: left;
     background-repeat: no-repeat;
 }
 
 .content-right {
-    background-color: var(--basic-blue);
     grid-column: 2/4;
     padding-top: 3px;
+    background-color: var(--basic-blue);
 }
 
 .content {
-    background-color: var(--basic-grey);
     grid-column: 1/5;
     grid-row: 4/5;
+    background-color: var(--basic-grey);
 }
 
 .content-list {
     list-style: none;
     display: grid;
     grid-template-columns: 400px 400px 400px;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 .offer {
     position: relative;
-    background: var(--brand-color);
     text-align: center;
+    background: var(--brand-color);
 }
 
 .offer-title {
@@ -374,40 +374,34 @@ img {
 }
 
 .offer-info {
+    width: 450px;
     font-family: var(--brand-font);
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
     text-transform: uppercase;
-    width: 450px;
     margin: 32px auto 45px;
-}
-
-.offer-info::first-line {
-    width: 400px;
 }
 
 /* Button search */
 
 .button {
     padding: 0;
-    border: none;
-    font: inherit;
-    color: inherit;
     background-color: transparent;
+    border: none;
     cursor: pointer;
     outline: none;
 }
 
 .button-search {
-    color: var(--brand-color);
+    width: 568px;
     background-color: var(--basic-brown);
     font-family: var(--brand-font);
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
     text-transform: uppercase;
-    width: 568px;
+    color: var(--brand-color);
     padding: 30px 0;
 }
 
@@ -428,11 +422,11 @@ img {
     left: 316px;
     max-width: 568px;
     margin: 0 auto;
+    padding: 55px;
     background-color: var(--brand-color);
     box-shadow: 0px 7px 15px var(--shadow-form);
-    box-sizing: border-box;
-    padding: 55px;
     z-index: 100;
+    box-sizing: border-box;
     animation: bounce 0.6s;
 }
 
@@ -462,43 +456,42 @@ img {
     position: relative;
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
 }
 
 .modal-label-text {
+    display: inline-block;
+    vertical-align: middle;
+    width: 112px;
     font-family: var(--brand-font);
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 26px;
     text-transform: uppercase;
-    display: inline-block;
-    vertical-align: middle;
-    width: 110px;
     text-align: left;
     order: -1;
 }
 
 .label-text-children {
     width: 65px;
-    margin-left: 54px;
+    margin-left: 53px;
 }
 
 .modal-field {
-    height: 36px;
-    background-color: var(--dark-grey);
-    border: none;
-    outline: none;
-    padding: 0;
     width: 346px;
-    box-sizing: border-box;
-    padding: 6px 7px 6px 12px;
+    height: 38px;
     font-family: var(--brand-font);
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 26px;
     text-transform: uppercase;
+    padding: 6px 7px 6px 12px;
+    background-color: var(--dark-grey);
+    border: none;
+    outline: none;
+    box-sizing: border-box;
 }
 
 .modal-field:hover {
@@ -506,13 +499,13 @@ img {
 }
 
 .modal-field:focus {
-    border: 2px solid var(--form-field-border);
     background-color: var(--brand-color);
+    border: 2px solid var(--form-field-border);
 }
 
 .modal-icon {
     position: absolute;
-    right: 7px;
+    right: 10px;
     cursor: pointer;
 }
 
@@ -526,43 +519,42 @@ img {
 
 .modal-wrapper {
     display: flex;
-    align-items: center;
     justify-content: left;
-    margin-bottom: 56px;
+    align-items: center;
+    margin-bottom: 55px;
 }
 
 .modal-wrapper-buttons {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .modal-number-input {
+    max-width: 38px;
+    min-height: 38px;
     font-family: var(--brand-font);
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 26px;
     text-transform: uppercase;
-    max-width: 38px;
-    min-height: 38px;
+    text-align: center;
     padding: 0;
     background-color: var(--dark-grey);
     border: none;
-    text-align: center;
     box-sizing: border-box;
-    padding: 0;
 }
 
 .modal-number-input:hover {
-    border: none;
     background-color: var(--form-field-hover);
+    border: none;
 }
 
 .modal-number-input:focus {
+    background-color: var(--brand-color);
     border: 2px solid var(--form-field-border);
     outline: none;
-    background-color: var(--brand-color);
 }
 
 input::-webkit-input-placeholder {
@@ -576,13 +568,13 @@ input::-webkit-input-placeholder {
 }
 
 .button-modal {
-    border: none;
-    outline: none;
-    background-color: var(--dark-grey);
     width: 38px;
     height: 38px;
     padding: 0;
+    background-color: var(--dark-grey);
+    border: none;
     cursor: pointer;
+    outline: none;
 }
 
 .button-modal:hover path,
@@ -596,11 +588,11 @@ input::-webkit-input-placeholder {
 }
 
 .button-minus {
-    margin: 17px auto;
+    margin: 19px auto;
 }
 
 .button-plus {
-    margin: 13px auto;
+    margin: 15px auto;
 }
 
 .find-button {
@@ -610,9 +602,9 @@ input::-webkit-input-placeholder {
     font-size: 21px;
     line-height: 27px;
     text-transform: uppercase;
-    background-color: var(--basic-blue);
     color: var(--brand-color);
-    padding: 16px 196px;
+    padding: 15px 196px 16px 196px;
+    background-color: var(--basic-blue);
 }
 
 .find-button:hover {
@@ -620,18 +612,18 @@ input::-webkit-input-placeholder {
 }
 
 .find-button:active {
-    background-color: var(--extra-dark-blue);
     color: var(--special-white);
+    background-color: var(--extra-dark-blue);
 }
 
 /* карта */
 
 .map {
     height: 594px;
-    background: var(--basic-grey) url(../img/map.png);
     top: 0;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    background: var(--basic-grey) url(../img/map.png);
 }
 
 /* Footer */
@@ -639,41 +631,42 @@ input::-webkit-input-placeholder {
 .page-footer {
     position: absolute;
     bottom: 0;
-    background-color: var(--dirty-white);
     min-width: 1200px;
+    min-height: 121px;
     grid-row: 3/4;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--dirty-white);
     z-index: 2;
 }
 
 .page-footer-catalog {
-    background-color: var(--dirty-white);
     min-width: 1200px;
     grid-row: 3/4;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--dirty-white);
 }
 
 .contacts {
-    color: var(--basic-black);
     font-family: var(--brand-font);
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
     text-transform: uppercase;
-    text-align: center;
+    color: var(--basic-black);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     align-content: center;
-    padding-left: 70px;
+    padding-left: 72px;
 }
 
 .contacts span {
     display: inline-block;
     vertical-align: middle;
-    margin-top: 23px;
+    margin-top: 22px;
 }
 
 .contacts p {
@@ -689,19 +682,19 @@ input::-webkit-input-placeholder {
     list-style: none;
     display: flex;
     justify-content: center;
+    margin-top: 36px;
     padding: 0;
-    margin-top: 35px;
     gap: 6px;
 }
 
 .social-button {
-    background-color: var(--basic-blue);
-    color: var(--brand-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 46px;
     height: 48px;
+    color: var(--brand-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--basic-blue);
 }
 
 .social-button:hover {
@@ -720,9 +713,7 @@ input::-webkit-input-placeholder {
     font-family: var(--brand-font);
     font-weight: normal;
     font-size: 14px;
-    line-height: 26px;
     text-transform: uppercase;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -733,8 +724,8 @@ input::-webkit-input-placeholder {
 }
 
 .copyright-link {
-    margin-right: 71px;
     color: var(--dark-black);
+    margin-right: 72px;
 }
 
 .copyright-link:hover path {
@@ -767,35 +758,35 @@ input::-webkit-input-placeholder {
 }
 
 .selector-fieldset {
-    padding: 0;
     margin: 0;
     margin-top: 26px;
+    padding: 0;
     border: none;
 }
 
 .selector-fieldset ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 31px;
     font-family: var(--brand-font);
-    color: var(--brand-color);
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;
+    color: var(--brand-color);
+    margin: 0;
+    margin-bottom: 31px;
     margin-top: 25px;
+    padding: 0;
 }
 
 .selector-fieldset legend {
     font-family: var(--brand-font);
-    color: var(--brand-color);
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 21px;
     text-transform: uppercase;
+    color: var(--brand-color);
 }
 
 .selector-list li {
@@ -808,19 +799,19 @@ input::-webkit-input-placeholder {
 }
 
 .check-input {
+    position: absolute;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    position: absolute;
 }
 
 .check__box {
     position: absolute;
     width: 27px;
     height: 23px;
+    margin-left: -40px;
     background-image: url(../img/checkbox-off.svg);
     background-repeat: no-repeat;
-    margin-left: -40px;
     cursor: pointer;
 }
 
@@ -850,25 +841,25 @@ input::-webkit-input-placeholder {
 }
 
 .price-controls {
-    display: flex;
+    width: 313px;
+    height: 32px;
     font-family: var(--brand-font);
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;
     color: var(--brand-color);
+    display: flex;
+    margin-top: 11px;
     border: 2px solid var(--brand-color);
     border-radius: 2px;
-    width: 313px;
-    height: 32px;
-    margin-top: 10px;
 }
 
 .price-controls .price-controls-input {
     width: 66px;
-    padding: 0;
-    border: none;
-    background: none;
     color: var(--brand-color);
+    padding: 0;
+    background: none;
+    border: none;
 }
 
 .min-price {
@@ -882,9 +873,9 @@ input::-webkit-input-placeholder {
     content: "";
     width: 2px;
     height: 22px;
-    background-color: var(--brand-color);
     left: 93px;
     top: 0;
+    background-color: var(--brand-color);
 }
 
 .max-price {
@@ -896,12 +887,12 @@ input::-webkit-input-placeholder {
 .range-controls {
     position: relative;
     height: 22px;
+    margin-top: 9px;
+    margin-bottom: 13px;
     padding-top: 11px;
     padding-left: 2px;
     padding-right: 2px;
     border-radius: 5px;
-    margin-top: 9px;
-    margin-bottom: 14px;
 }
 
 .scale {
@@ -922,11 +913,11 @@ input::-webkit-input-placeholder {
     width: 4px;
     height: 4px;
     padding: 0;
-    border: 8px solid var(--brand-color);
     background-color: var(--range-bg);
+    border: 8px solid var(--brand-color);
     border-radius: 50%;
-    box-shadow: 0 2px 0 0 var(--range-bg);
     cursor: pointer;
+    box-shadow: 0 2px 0 0 var(--range-bg);
 }
 
 .range-controls .toggle:hover {
@@ -940,30 +931,29 @@ input::-webkit-input-placeholder {
 .button-selector {
     width: 137px;
     height: 36px;
-    background: transparent;
-    border: 2px solid var(--brand-color);
-    border-radius: 2px;
     font-family: var(--brand-font);
     font-style: normal;
     font-weight: normal;
-    text-transform: uppercase;
     font-size: 14px;
     line-height: 21px;
+    text-transform: uppercase;
     color: var(--brand-color);
     margin-left: 84px;
-    margin-bottom: 32px;
+    background: transparent;
+    border: 2px solid var(--brand-color);
+    border-radius: 2px;
 }
 
 .button-selector:hover {
-    background-color: var(--brand-color);
     color: var(--basic-black);
+    background-color: var(--brand-color);
 }
 
 .filter {
-    background-color: var(--brand-color);
     display: flex;
     align-items: center;
     margin-right: 73px;
+    background-color: var(--brand-color);
 }
 
 .filter-result {
@@ -993,10 +983,10 @@ input::-webkit-input-placeholder {
     line-height: 18px;
     text-transform: uppercase;
     color: var(--basic-blue);
-    background-color: var(--brand-color);
-    border: none;
     margin-left: 40px;
     margin-bottom: 5px;
+    background-color: var(--brand-color);
+    border: none;
 }
 
 .filter-button {
@@ -1005,10 +995,10 @@ input::-webkit-input-placeholder {
     line-height: 18px;
     text-transform: uppercase;
     color: var(--light-white);
-    background-color: var(--brand-color);
-    border-bottom: 1px dashed var(--basic-blue);
     margin-left: 34px;
     margin-bottom: 5px;
+    background-color: var(--brand-color);
+    border-bottom: 1px dashed var(--basic-blue);
 }
 
 .filter-button:hover {
@@ -1021,9 +1011,11 @@ input::-webkit-input-placeholder {
 }
 
 .buttons-direction {
-    margin-left: auto;
     display: flex;
     justify-content: flex-end;
+    margin-top: 4px;
+    margin-left: auto;
+    padding: 0;
     gap: 12px;
 }
 
@@ -1061,16 +1053,16 @@ input::-webkit-input-placeholder {
 }
 
 .hotel-list-item {
+    min-height: 150px;
     display: flex;
     flex-wrap: wrap;
-    min-height: 150px;
     align-items: center;
-    border-bottom: 1px solid var(--form-field-border);
     padding: 0 73px;
+    border-bottom: 1px solid var(--form-field-border);
 }
 
 .hotel-photo {
-    margin-bottom: 0;
+    margin-top: 4px;
 }
 
 .hotel-card {
@@ -1093,13 +1085,13 @@ input::-webkit-input-placeholder {
 
 .booking p,
 .details p {
-    color: var(--basic-black);
     font-family: var(--brand-font);
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;
+    color: var(--basic-black);
     margin-top: 7px;
     margin-bottom: 16px;
 }
@@ -1116,27 +1108,27 @@ input::-webkit-input-placeholder {
 
 .hotel-rate {
     display: block;
-    margin: 47px 0 0 auto;
     width: 83px;
-    padding: 3px 12px 3px 15px;
-    background-color: var(--dark-grey);
-    color: var(--rate-grey);
     font-family: var(--brand-font);
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;
+    color: var(--rate-grey);
+    margin: 47px 0 0 auto;
+    padding: 3px 12px 3px 15px;
+    background-color: var(--dark-grey);
 }
 
 .hotel-link {
-    color: var(--basic-black);
     font-family: var(--brand-font);
     font-style: normal;
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
     text-transform: uppercase;
+    color: var(--basic-black);
 }
 
 .hotel-link:hover {
@@ -1158,9 +1150,9 @@ input::-webkit-input-placeholder {
 }
 
 .hotel-button-more {
-    background-color: var(--basic-blue);
     color: var(--brand-color);
     padding: 3px 17px 3px 17px;
+    background-color: var(--basic-blue);
 }
 
 .hotel-button-more:hover {
@@ -1173,9 +1165,9 @@ input::-webkit-input-placeholder {
 }
 
 .hotel-button-booking {
-    background-color: var(--basic-brown);
     color: var(--brand-color);
     padding: 3px 17px 3px 17px;
+    background-color: var(--basic-brown);
 }
 
 .hotel-button-booking:hover {
