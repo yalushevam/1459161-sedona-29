@@ -80,42 +80,42 @@ img {
 /* Header */
 
 .main-header {
-    grid-row: 1/2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--brand-color);
+  grid-row: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--brand-color);
 }
 
 .main-header div {
-    position: absolute;
-    top: 0;
-    justify-self: center;
-    z-index: 1;
+  position: absolute;
+  top: 0;
+  justify-self: center;
+  z-index: 1;
 }
 
 .main-navigation {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 14px 0 16px;
-    background-color: var(--brand-color);
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 14px 0 16px;
+  background-color: var(--brand-color);
 }
 
 .main-navigation li:nth-child(1) {
-    padding: 0 67px 0 72px;
+  padding: 0 67px 0 72px;
 }
 
 .main-navigation li:nth-child(2) {
-    padding: 0 209px 0 67px;
+  padding: 0 209px 0 67px;
 }
 
 .main-navigation li:nth-child(3) {
-    padding: 0 73px 0 209px;
+  padding: 0 73px 0 209px;
 }
 
 .main-navigation li:nth-child(4) {
-    padding: 0 72px 0 74px;
+  padding: 0 72px 0 74px;
 }
 
 .main-navigation a {
@@ -523,10 +523,15 @@ img {
     border: 2px solid var(--form-field-border);
 }
 
-.modal-icon {
+.modal-button {
     position: absolute;
-    right: 10px;
-    cursor: pointer;
+    right: 2px;
+    background-color: transparent;
+    border: none;
+}
+
+.modal-icon {
+  cursor: pointer;
 }
 
 .modal-icon:hover path {
@@ -997,7 +1002,7 @@ input::-webkit-input-placeholder {
     margin-top: 5px;
 }
 
-.filter-button-selected {
+.filter-item-selected {
     font-family: var(--brand-font);
     font-size: 12px;
     line-height: 18px;
@@ -1009,7 +1014,7 @@ input::-webkit-input-placeholder {
     border: none;
 }
 
-.filter-button {
+.filter-item {
     font-family: var(--brand-font);
     font-size: 12px;
     line-height: 18px;
@@ -1030,7 +1035,7 @@ input::-webkit-input-placeholder {
     border: none;
 }
 
-.buttons-direction {
+.links-direction {
     display: flex;
     justify-content: flex-end;
     margin-top: 4px;
@@ -1100,7 +1105,7 @@ input::-webkit-input-placeholder {
 }
 
 .booking {
-    margin-left: 2px;
+    margin-left: 1px;
 }
 
 .booking p,
@@ -1167,11 +1172,11 @@ input::-webkit-input-placeholder {
     font-size: 14px;
     line-height: 21px;
     text-transform: uppercase;
+    color: var(--brand-color);
+    padding: 4px 17px 5px 17px;
 }
 
 .hotel-button-more {
-    color: var(--brand-color);
-    padding: 3px 17px 3px 17px;
     background-color: var(--basic-blue);
 }
 
@@ -1185,8 +1190,6 @@ input::-webkit-input-placeholder {
 }
 
 .hotel-button-booking {
-    color: var(--brand-color);
-    padding: 3px 17px 3px 17px;
     background-color: var(--basic-brown);
 }
 
