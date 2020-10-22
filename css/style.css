@@ -81,7 +81,6 @@ img {
 
 .main-header {
   grid-row: 1/2;
-
   background-color: var(--brand-color);
 }
 
@@ -98,7 +97,6 @@ img {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin: 0;
   padding: 14px 72px 16px;
   background-color: var(--brand-color);
@@ -107,18 +105,20 @@ img {
 .main-navigation li:nth-child(1) {
   width: 100px;
   text-align: left;
+  margin-right: 128px;
 }
 
 .main-navigation li:nth-child(2) {
   width: 100px;
   text-align: left;
-  margin-right: 135px;
+  margin-right: 200px;
 }
 
 .main-navigation li:nth-child(3) {
   width: 100px;
   text-align: right;
-  margin-left: 137px;
+  margin-left: 201px;
+  margin-right: 127px;
 }
 
 .main-navigation li:nth-child(4) {
