@@ -81,52 +81,49 @@ img {
 
 .main-header {
   grid-row: 1/2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   background-color: var(--brand-color);
 }
 
 .main-header div {
   position: absolute;
   top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   justify-self: center;
   z-index: 1;
 }
 
 .main-navigation {
   list-style: none;
-  width: 100%;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0;
-  padding: 14px 0 16px;
+  padding: 14px 72px 16px;
   background-color: var(--brand-color);
 }
 
 .main-navigation li:nth-child(1) {
   width: 100px;
   text-align: left;
-  margin-left: 72px;
 }
 
 .main-navigation li:nth-child(2) {
   width: 100px;
   text-align: left;
-  margin-left: 129px;
-  margin-right: 200px;
+  margin-right: 135px;
 }
 
 .main-navigation li:nth-child(3) {
   width: 100px;
   text-align: right;
-  margin-right: 127px;
-  margin-left: 200px;
+  margin-left: 137px;
 }
 
 .main-navigation li:nth-child(4) {
   width: 100px;
   text-align: right;
-  margin-right: 72px;
 }
 
 .main-navigation a {
