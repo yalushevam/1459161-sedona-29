@@ -80,50 +80,50 @@ img {
 /* Header */
 
 .main-header {
-  grid-row: 1/2;
-  background-color: var(--brand-color);
+    grid-row: 1/2;
+    background-color: var(--brand-color);
 }
 
 .main-header div {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  justify-self: center;
-  z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-self: center;
+    z-index: 1;
 }
 
 .main-navigation {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 14px 72px 16px;
-  background-color: var(--brand-color);
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 14px 72px 16px;
+    background-color: var(--brand-color);
 }
 
 .main-navigation li:nth-child(1) {
-  width: 100px;
-  text-align: left;
-  margin-right: 128px;
+    width: 100px;
+    text-align: left;
+    margin-right: 128px;
 }
 
 .main-navigation li:nth-child(2) {
-  width: 100px;
-  text-align: left;
-  margin-right: 200px;
+    width: 100px;
+    text-align: left;
+    margin-right: 200px;
 }
 
 .main-navigation li:nth-child(3) {
-  width: 100px;
-  text-align: right;
-  margin-left: 201px;
-  margin-right: 127px;
+    width: 100px;
+    text-align: right;
+    margin-left: 201px;
+    margin-right: 127px;
 }
 
 .main-navigation li:nth-child(4) {
-  width: 100px;
-  text-align: right;
+    width: 100px;
+    text-align: right;
 }
 
 .main-navigation a {
@@ -399,7 +399,6 @@ img {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    outline: none;
 }
 
 .button-search {
@@ -437,7 +436,7 @@ img {
     z-index: 100;
     box-sizing: border-box;
     -webkit-animation: bounce 0.6s;
-            animation: bounce 0.6s;
+    animation: bounce 0.6s;
 }
 
 @-webkit-keyframes bounce {
@@ -539,7 +538,7 @@ img {
 }
 
 .modal-icon {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .modal-icon:hover path {
@@ -607,7 +606,6 @@ input::-webkit-input-placeholder {
     background-color: var(--dark-grey);
     border: none;
     cursor: pointer;
-    outline: none;
 }
 
 .button-modal:hover path,
@@ -669,6 +667,7 @@ input::-webkit-input-placeholder {
     grid-row: 3/4;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
     background-color: var(--dirty-white);
     z-index: 2;
 }
@@ -678,6 +677,7 @@ input::-webkit-input-placeholder {
     grid-row: 3/4;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
     background-color: var(--dirty-white);
 }
 
@@ -715,7 +715,7 @@ input::-webkit-input-placeholder {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin-top: 36px;
+    margin: 0;
     padding: 0;
     gap: 6px;
 }
@@ -834,8 +834,8 @@ input::-webkit-input-placeholder {
 .check-input {
     position: absolute;
     -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .check__box {
