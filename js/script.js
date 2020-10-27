@@ -16,6 +16,8 @@ buttonModal.addEventListener('click', function (evt) {
 popup.addEventListener('submit', function (evt) {
   if (!DateIn.value || !DateOut.value || !NumberAdults.value || !NumberChildren.value) {
   evt.preventDefault();
+  popup.classList.remove('modal-error');
+  popup.offsetWidth = popup.offsetWidth;
   popup.classList.add('modal-error');
   }
 });
