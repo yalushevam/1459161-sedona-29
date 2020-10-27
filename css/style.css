@@ -548,11 +548,20 @@ img {
     border: 2px solid var(--form-field-border);
 }
 
-.modal-button {
+.modal-button-in {
     position: absolute;
-    right: 2px;
+    top: 61px;
+    left: 477px;
     background-color: transparent;
     border: none;
+}
+
+.modal-button-out {
+  position: absolute;
+  top: 128px;
+  left: 477px;
+  background-color: transparent;
+  border: none;
 }
 
 .modal-icon {
